@@ -6,4 +6,5 @@ by [Michael Hartl](http://michaelhartl.com/).
 
 In Chapter 10 section 10.2.2.
 Continue with Figure 10.6 and Listing 10.21.
-Upgrade Ruby version to 2.0.0p353
+
+Upgrade Ruby version to 2.0.0-p353
