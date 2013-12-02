@@ -7,8 +7,10 @@ describe "Authentication" do
   describe "signin page" do
     before { visit signin_path }
 
-   it { should have_content("Sign in") }
-   it { should have_title("Sign in") }
+    it { should have_content("Sign in") }
+    it { should have_title("Sign in") }
+    it { should_not have_link('Profile') }
+    it { should_not have_link('Settings') }
   end
 
   describe "signin" do
