@@ -14,15 +14,17 @@ class UsersController < ApplicationController
   end
 
   def new
-    if !signed_in?
-      @user = User.new
+    if signed_in?
+      redirect_to root_url
     else
-        redirect_to root_url
+      @user = User.new
     end
   end
 
   def create
-    if !signed_in?
+    if signed_in?
+      redirect_to root_url
+    else
       @user = User.new(user_params)
       if @user.save
         sign_in @user
@@ -31,8 +33,6 @@ class UsersController < ApplicationController
       else
         render 'new'
       end
-    else
-        redirect_to root_url
     end
   end
 

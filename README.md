@@ -4,5 +4,5 @@ This is the sample application for
 the [*Ruby on Rails Tutorial*](http://railstutorial.org/)
 by [Michael Hartl](http://michaelhartl.com/).
 
-In Chapter 11 start at section 11.2.3.
+Need to do exercises for chapters 10, 11.
 
